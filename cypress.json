@@ -1,5 +1,12 @@
 {
   "baseUrl": "http://localhost:3000",
   "viewportWidth": 1440,
-  "viewportHeight": 900
+  "viewportHeight": 900,
+  "dbConfig": {
+    "host": "castor.db.elephantsql.com",
+    "user": "pylbvjrr",
+    "password": "ZNeSOzkPKx8_Gc0ybEbf9sQ4tQCKjVP7",
+    "database": "pylbvjrr",
+    "port": 5432
+  }
 }
