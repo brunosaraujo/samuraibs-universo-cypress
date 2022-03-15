@@ -4,7 +4,7 @@ import dashPage from '../support/pages/dash'
 
 describe('login', function () {
 
-  context('quando informo login e senha corrata', function () {
+  context('quando informo login e senha correta', function () {
     const user = {
       name: 'Teste Araujo',
       email: 'testearaujo@samuraibs.com',
