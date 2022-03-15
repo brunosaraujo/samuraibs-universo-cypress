@@ -2,23 +2,18 @@ import { el } from './elements'
 
 import toast from '../../components/toast'
 
-class SignupPage {
+class LoginPage {
 
   constructor() {
     this.toast = toast
   }
 
   go() {
-    cy.visit('/signup')
+    cy.visit('/')
   }
 
   form(user) {
-    //Preenchimento da massa de cadastro
-    //Para buscar começando com Nome utilizamos ^
-    cy.get(el.name).type(user.name)
-    //Para buscar terminando com email utilizamos $
     cy.get(el.email).type(user.email)
-    //Para buscar contendo senha utilizamos *
     cy.get(el.password).type(user.password)
   }
 
@@ -28,4 +23,4 @@ class SignupPage {
 
 }
 
-export default new SignupPage()
+export default new LoginPage()

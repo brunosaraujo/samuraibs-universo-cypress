@@ -7,5 +7,11 @@ class Toast {
       .find('p')
       .should('have.text', expectTeste)
   }
+
+  alertHaveText(expectedText){
+    cy.contains(el.alert, expectedText)
+    .should('be.visible')
+  }
+
 }
 export default new Toast()

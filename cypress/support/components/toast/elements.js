@@ -1,3 +1,4 @@
 exports.el = {
-  toast: '.toast'
+  toast: '.toast',
+  alert: '.alert-error'
 }
