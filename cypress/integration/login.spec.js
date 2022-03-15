@@ -56,7 +56,7 @@ describe('login', function () {
     })
   })
 
-  context('quando email é incorreto', function () {
+  context('quando não preecho nenhum dos campos', function () {
 
     const alertMessages = [
       'E-mail é obrigatório',
