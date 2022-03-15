@@ -40,9 +40,7 @@ describe('login', function () {
 
   context('quando email é incorreto', function () {
     const user = {
-      name: 'Teste Araujo',
       email: 'testearaujosamuraibs.com',
-      is_provider: true,
       password: 'pwd123'
     }
 
