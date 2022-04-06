@@ -1,11 +1,9 @@
-
+import { el } from './elements'
+import header from "../../components/header"
 class DashPage {
 
-  avatarHaveText(user){
-    cy.contains('span', 'Bem-vindo')
-    .should('be.visible')
-    cy.contains('strong', user)
-    .should('be.visible')
+  constructor(){
+    this.header = header
   }
 
 }
