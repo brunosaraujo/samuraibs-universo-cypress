@@ -1,0 +1,23 @@
+{
+  "success": {
+    "name": "Bruno Araujo",
+    "email": "brunoaraujo@samuraibs.com",
+    "password": "pwd123"
+  },
+  "email_dup": {
+    "name": "Teste Araujo",
+    "email": "testearaujo@samuraibs.com",
+    "is_provider": true,
+    "password": "pwd123"
+  },
+  "email_inv": {
+    "name": "Eliza Olsen",
+    "email": "lisa.yahoo.com",
+    "password": "pwd123"
+  },
+  "short_password": {
+    "name": "Jason Friday",
+    "email": "jason@gmail.com",
+    "password": null
+  }
+}
