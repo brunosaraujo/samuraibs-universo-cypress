@@ -6,6 +6,25 @@ class DashPage {
     this.header = header
   }
 
+  calendarShouldBeVisible(){
+    cy.get(el.calender, {timeout: 7000})
+      .should('be.visible')
+  }
+
+  selectDay(day){
+    const target = new RegExp('^' + day + '$', 'g')
+    cy.contains(el.boxDay, target)
+      .click({force:true})
+  }
+
+  appointmentShouldBeVisible(customer, hour){
+    cy.contains('div', customer.name)
+      .should('be.visible')
+      .parent()
+      .contains(el.boxHour, hour)
+      .should('be.visible')
+  }
+
 }
 
 export default new DashPage()
