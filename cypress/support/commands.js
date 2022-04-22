@@ -66,7 +66,7 @@ Cypress.Commands.add('creatAppointment', function (hour) {
 
   Cypress.env('appointmentDay', now.getDate())
 
-  const date = moment(now).format('YYYY-MM-DD ' + hour + ':00')
+  const date = moment(now).format(`YYYY-MM-DD ${hour}:00`)
 
   const payload = {
     provider_id: Cypress.env('providerId'),
@@ -75,7 +75,7 @@ Cypress.Commands.add('creatAppointment', function (hour) {
 
   cy.request({
     method: 'POST',
-    url: apiServer + '/appointments',
+    url: `${apiServer}/appointments`,
     body: payload,
     headers: {
       authorization: 'Bearer ' + Cypress.env('apiToken')
