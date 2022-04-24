@@ -25,7 +25,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-        
+
       - name: Ping API (heroku)
         uses: Leocardoso94/is-my-site-up@v1.2
         with:
@@ -42,7 +42,7 @@ jobs:
           record: true
           parallel: true
           group: 'UI - Chrome'
-          spec: ${{ github.event.inputs.spec }}
+          spec: ${{ github.event.inputs.specs }}
         env:
           TZ: America/Sao_Paulo
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
